@@ -8,7 +8,7 @@ module IO =
     let bind(f, IO (action)) =
         let x = action()
         match f x with IO (action') ->
-        ret action'
+        IO action'
 
     let map f (IO (action)) =
         IO (action >> f)
