@@ -1,4 +1,4 @@
-﻿namespace Monad
+﻿namespace Monads
 
 module IO =
     type IO<'a> = IO of (unit -> 'a)
